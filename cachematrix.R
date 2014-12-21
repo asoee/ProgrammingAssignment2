@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Makes a "struct" that holds a matrix, and can hold the cached inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## calculates the inverse of a matrix, contained in the CacheMatrix struct defined above.
+## The inverse is only calculated once, and is then stored in the struct.
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
